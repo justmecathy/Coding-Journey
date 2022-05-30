@@ -1,11 +1,10 @@
+/* Shared sections */
 body {
     margin: 0px;
     font-family: 'Source Code Pro', sans-serif;
 }
 section {
-    height: 500px;
     background-color: whitesmoke;
-    border: solid 1px;
 }
 .hero {
     background-color:rgb(214, 205, 255);
@@ -19,6 +18,7 @@ footer {
     background-color: black;
 }
 
+/* Navigation bar in hero. */
 nav {
     display: flex;
     justify-content: space-between;
@@ -94,6 +94,74 @@ p {
     margin: 10px;
 }
 
+/* This is styling of about me section */
 .about {
     background-color: #faa8b7
+}
+
+.Subsection {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+.Textabout {
+    display: flex;
+    flex-direction: column;
+}
+.Headshot {
+    width: 400px;
+    border-radius: 100px;
+}
+
+.headshot-container {
+    display: flex;
+    align-content: center;
+}
+
+/* Styling of Portfolio Section */
+
+.subsection-alt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.project-card {
+    margin: 10px;
+    width: 270px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgba(153, 50, 204, 0.496);
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 200px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #faa8b7;
 }
