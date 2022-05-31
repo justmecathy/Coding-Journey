@@ -6,6 +6,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;1,800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/56583c918d.js" crossorigin="anonymous"></script>
         <title>My Coding Journey</title>
     </head>
     <body>
@@ -13,12 +14,15 @@
             <nav>
                 <img class="logo" src="src/images/Logo.png">
             </img>
-                <ul>
-                    <li>About me</li>
-                    <li>My Journey</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                <ul id="nav-list">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#my-journey">My Journey</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </nav>
             <div class="hero-area">
                 <div class="herotext">
@@ -26,7 +30,7 @@
                     <p>From Zero to hero </p>
                     <p>My Journey</p>
                     <div class="button">
-                        Read here
+                        <a href="#about-me">Read here</a>
                     </div>
                 </div>
             <div class="socials">
@@ -40,7 +44,7 @@
             </div>
             </div>
         </section>
-        <section class="Subsection">
+        <section class="Subsection" id="about-me">
             <div class="Textabout">
             <h2>About me</h2>
             <p>Hey my Name is Catharina Henninger. I am an aspiring software developer. And want to show you my ups and downs my struggles and successes.</p> </div>
@@ -48,7 +52,10 @@
             <img class="Headshot" src="src/images/Avatar.png" alt="Avatar Headshot"> 
             </div>
         </section>
-        <section class="subsection-alt">
+        <section class="Blog" id="my-journey">
+
+        </section>
+        <section class="subsection-alt" id="projects">
             <h2> Projects</h2>
             <div class="project-container">
             <div class="project-card"> 
@@ -81,8 +88,9 @@
             </div>
             </div>
         </section>
-        <section></section>
-        <footer></footer>
+        <footer><a id="contact"></a>
+        <h2>Contact me</h2>
+        <p>Catharina.henninger@gmail.com</p></footer>
     </body>
     <script src="src/app.js" charset="utf-8"></script>
 </html>
